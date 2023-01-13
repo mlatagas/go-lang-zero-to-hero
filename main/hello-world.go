@@ -6,15 +6,10 @@ func Hello(name string, lang string) string {
 
 	prefix := "Hello, "
 
-	if name == "" {
-		name = "World"
-	}
-
-	if lang == "Spanish" {
-
+	switch lang {
+	case "spanish":
 		prefix = "Hola, "
-
-	} else if lang == "Zulu" {
+	case "zulu":
 		prefix = "Sawubona, "
 
 	}
